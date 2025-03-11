@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* 导航栏样式 */
+nav {
+  background-color: #b2e5c8; /* 淡绿色背景 */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* 使导航链接和用户信息分开 */
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #333; /* 改为深色文字 */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e8f5e9;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* 改为深色文字 */
+}
+
+/* 登录页面样式 */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #b2e5c8;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #a0d4b6;
+}
+
+.login-form p {
+  color: red;
+  text-align: center;
+}
+
+/* 让 Profile 页面使用两栏布局 */
+.profile-container {
+  display: flex;
+  height: 80vh;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 左侧导航栏样式 */
+.profile-sidebar {
+  width: 25%;
+  background-color: #b2e5c8; /* 淡蓝色背景 */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.profile-link:hover {
+  background-color: #b2e5c8;
+  border-radius: 5px;
+}
+
+/* 右侧内容区域 */
+.profile-content {
+  flex: 1;
+  background-color: #f5f5f5; /* 浅灰色背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
