@@ -1,0 +1,9 @@
+{
+  "extends": ["taro/react"],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/first": "off", // 禁用导入顺序检查
+    "jsx-quotes": "off" // 禁用单双引号规则
+  }
+}

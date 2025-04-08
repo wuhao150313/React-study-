@@ -1,0 +1,64 @@
+.account-container {
+  padding: 20px;
+
+  .statistics {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .label {
+        color: #666;
+        font-size: 28px;
+      }
+
+      .value {
+        font-size: 32px;
+        font-weight: bold;
+
+        &.positive {
+          color: #07c160;
+        }
+
+        &.negative {
+          color: #ff4949;
+        }
+
+        &.expense {
+          color: #ff4949;
+        }
+      }
+    }
+  }
+
+  /* Fixed bottom button style */
+  .fixed-bottom-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 9999; /* Increased z-index to make sure it's on top */
+    background-color: white; /* Ensure the button has a white background */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;
+    margin: 0; /* Remove any additional margin */
+  }
+
+  .delete-icon {
+    padding: 10px;
+  }
+}
