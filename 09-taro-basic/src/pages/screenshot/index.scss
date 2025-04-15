@@ -1,0 +1,25 @@
+.screenshot {
+  padding: 20px;
+
+  .screenshot-container {
+    margin: 20px 0;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+
+    .screenshot-preview {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
